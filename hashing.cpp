@@ -17,7 +17,7 @@ void scrypt(const FunctionCallbackInfo<Value>& args) {
 
     if (args.Length() < 4) {
         do {
-            isolate->ThrowException(Exception::Error(String::NewFromUtf8(isolate, "You must provide one argument.").ToLocalChecked()));
+            isolate->ThrowException(Exception::Error(String::NewFromUtf8(isolate, "You must provide four argument.").ToLocalChecked()));
             return;
         } while (0);
     }
